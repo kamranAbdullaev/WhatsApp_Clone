@@ -2,15 +2,16 @@ import React from 'react'
 import { HiOutlineSearch, HiOutlineDotsVertical,HiOutlineEmojiHappy,HiOutlinePaperClip,HiMicrophone} from "react-icons/hi";
 import './ChatMessage.scss';
 
-export default function ChatMessage() {
-  return (
-    <>
-      				<section className="right">
-						<div className="chat-head">
-								<img alt="profilepicture" src=''/>
-								<div className="chat-name">
-										<h1 className="font-name">Kamran</h1>
-										<p className="font-online">online</p>
+function ChatMessage(props) {
+	console.log(props);
+	return (
+		
+      <section className="right">
+			<div className="chat-head">
+				<img alt="profilepicture" src={props.obj.avatar} />
+					<div className="chat-name">
+						<h1 className="font-name">{props.obj.name}</h1>
+					<p className="font-online">onli</p>
 								</div>
 								<i aria-hidden="true"><HiOutlineSearch/></i>
 								<i aria-hidden="true"><HiOutlineDotsVertical/></i>
@@ -28,6 +29,7 @@ export default function ChatMessage() {
 								<i aria-hidden="true"><HiMicrophone/></i>
 						</div>
 				</section>
-    </>
   )
 }
+
+export default ChatMessage;
