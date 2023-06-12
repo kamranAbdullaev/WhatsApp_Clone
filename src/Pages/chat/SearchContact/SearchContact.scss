@@ -1,0 +1,132 @@
+.left {
+    width: 400px;
+}
+
+.profile {
+    width: 100%;
+    height: 60px;
+    background: #eeeeee;
+    border-right: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icons {
+    color: #777777;
+    display: flex;
+    font-size: 20px;
+}
+
+.wrap-search {
+    width: 100%;
+    height: 45px;
+    background: #fbfbfb;
+    display: flex;
+}
+
+.search {
+    width: calc(100% - 20px);
+    height: 30px;
+    background: #ffffff;
+    margin: auto;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    display: flex;
+}
+
+.search i {
+    widht: 60px;
+}
+
+.search i, .wrap-message i {
+    color: #aaaaaa;
+    text-align: center;
+}
+
+.input-search {
+    width: 100%;
+    border: none;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.contact-list {
+    background-color: #ffffff;
+    width: 100%;
+    height: calc(100% - 105px);
+    overflow-y: auto;
+}
+
+.contact, .active-contact, .new-message-contact {
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.contact img, .active-contact img, .new-message-contact img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.active-contact {
+    background-color: #ebebeb;
+}
+
+.contact:hover, .new-message-contact:hover {
+    background-color: #f5f5f5;
+}
+
+.new-message-contact {
+	font-weight: bold;
+}	
+
+.contact-preview {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    overflow: hidden;
+}
+
+.contact-text {
+    height: 40px;
+    margin: auto 0;
+    overflow: hidden;
+}
+
+.contact-time {
+    width: 55px;
+    color: rgba(0,0,0,0.4);
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.new-message {
+    background: #09d261;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    color: white;
+}
+
+.new-message p {
+	margin: auto;
+}

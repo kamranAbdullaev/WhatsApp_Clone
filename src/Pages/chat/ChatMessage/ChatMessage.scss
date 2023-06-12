@@ -1,0 +1,184 @@
+.right {
+    min-width: calc(100% - 400px);
+}
+
+.chat-head {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.chat-head img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.chat-head i {
+    color: #aaaaaa;
+    width: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+#close-contact-information {
+    display: none;
+}
+
+.chat-name {
+    width: 100%;
+    margin: auto;
+}
+
+.wrap-chat {
+    height: calc(100% - 120px);
+    display: flex;
+}
+
+.chat {
+    background-color: #e5ddd5;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1089577/background.png);
+    width: 100%;
+    padding: 0px 10%;
+    padding-top: 7px;
+    overflow-y: auto;
+}
+
+.information {
+    width: 100%;
+    position: relative;
+    background: #f7f7f7;
+    display: none;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.information div {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.information img {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    float: left;
+}
+
+.information h1 {
+    color: #009688;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.listGroups {
+    display: flex;
+    margin: 0px !important;
+}
+
+.listGroups img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 0px;
+}
+
+.listGroups p {
+    margin: auto 0px;
+}
+/* ------ CHAT ------ */
+.chat-bubble {
+    border-radius: 7px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+    padding: 5px 7px;
+    width: 350px;
+    max-width: 100%;
+    position: relative;
+}
+
+.you {
+    background: #ffffff;
+    margin: 0px auto 10px 0px;
+}
+
+.me {
+    background: #dcf8c6;
+    margin: 0px 0px 10px auto;
+}
+
+.your-mouth {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+}
+
+.my-mouth {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #dcf8c6;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 100%;
+}
+
+.content {
+    margin: 0.5em 0;
+    line-height: 120%;
+    font-size: 0.9em;
+}
+
+.content img {
+    width: 100%;
+}
+
+.time {
+    color: rgba(0,0,0,0.4);
+    font-size: 0.6em;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.pink {
+    color: #EE33AA;
+}
+
+.green {
+    color: #44FF66;
+}
+
+.orange {
+    color: #FF8811;
+}
+
+.wrap-message {
+    width: 100%;
+    height: 60px;
+    background: #f1f1f1;
+    display: flex;
+}
+
+.message {
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    margin-top: 7px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    display: flex;
+}
+
+.input-message {
+    border: none;
+}
+
+.input-message:focus {
+    outline: none;
+}

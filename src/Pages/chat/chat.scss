@@ -1,0 +1,85 @@
+.substrate{
+  overflow-y: auto;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  * {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eae6df;
+}
+
+i {
+    width: 60px;
+    margin: auto;
+}
+
+/* ------ FONTS ------ */
+.font-name {
+    color: #000000;
+    font-size: 1em;
+    font-weight: inherit;
+    padding-bottom: 3px;
+}
+
+.font-preview {
+    color: #444444;
+    font-size: 0.9em;
+    font-weight: inherit;
+}
+
+.font-online {
+    color: #777777;
+    font-size: 0.8em;
+    font-weight: inherit;
+}
+
+.green-background {
+    background: #009688;
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+}
+
+.wrap {
+    display: flex;
+    height: 100vh;
+    min-width: 600px;
+    max-width: 1200px;
+    margin: auto;
+    // box-shadow: 0 2px 2px #aaaaaa;
+}
+
+/* ------ SCROLLBAR ------ */
+
+body::-webkit-scrollbar, .contact-list::-webkit-scrollbar, .chat::-webkit-scrollbar, .information::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb, .contact-list::-webkit-scrollbar-thumb, .chat::-webkit-scrollbar-thumb, .information::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media (min-width: 1200px) {
+    .wrap {
+        margin-bottom: 2vh;
+        margin-top: 25px;
+        height: calc(98vh - 25px);
+    }
+}
+
+@media (max-width: 600px) {
+    .wrap {
+        height: calc(100vh - 0.4em);
+    }
+}
+}

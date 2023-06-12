@@ -1,0 +1,20 @@
+.modal-bg{
+  width: 700px;
+  height: 500px;
+  background-color: #007065;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  z-index: 100;
+  margin: auto;
+  top: 200px;
+  h3{
+    margin-top: 20px;
+    color:rgb(233, 233, 233);
+  }
+  hr{
+    color: rgb(0, 0, 0);
+  }
+}
